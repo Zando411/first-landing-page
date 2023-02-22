@@ -48,6 +48,48 @@ nav {
   color: black;
 }
 
+main {
+  background-color: #1f2937;
+  padding: 30px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__text {
+  align-self: flex-start;
+  margin: 50px;
+}
+
+.hero__image {
+  height: 500px;
+  width: auto;
+  margin: 50px;
+}
+
+.hero__tag {
+  margin: 10px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.hero__desc {
+  margin: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero__button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+/* everything to do with footer */
+
 footer {
   display: flex;
   justify-content: center;
