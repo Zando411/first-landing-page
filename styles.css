@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,200;1,500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,6 +6,8 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
+/* NAV */
 
 a {
   text-decoration: none;
@@ -48,6 +50,10 @@ nav {
   color: black;
 }
 
+/* NAV */
+
+/* MAIN */
+
 main {
   background-color: #1f2937;
   padding: 30px;
@@ -67,9 +73,16 @@ main {
 }
 
 .hero__image {
-  height: 600px;
-  width: auto;
+  max-width: 80%;
+  height: auto;
   margin: 50px;
+}
+
+.hero__image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 500px;
 }
 
 .hero__tag {
@@ -169,13 +182,114 @@ main {
 
 /* meet cats section */
 
+/* quote section */
+
+.main-quote {
+  background-color: #e5e7eb;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container__quotes {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote__atr {
+  align-self: flex-end;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.quote__text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 200;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/* quote section */
+
+/* CTA section */
+
+.cta__section {
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__cta {
+  display: flex;
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1e90ff;
+  border-radius: 15px;
+}
+
+.cta__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  padding-left: 10%;
+}
+
+.cta__button__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  padding-right: 10%;
+}
+
+.cta__button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.cta__button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.cta__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.cta__text {
+  font-size: 18px;
+  font-weight: 500px;
+  color: #e5e7eb;
+}
+
+/* CTA section */
+
 /* everything to do with footer */
 
 footer {
   display: flex;
   justify-content: center;
   background-color: #1f2937;
-  padding: 20px 0px;
+  padding: 40px 0px;
 }
 
 footer p {
